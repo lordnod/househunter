@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import requests, urlopen
 import csv
 
-desiredZip = 'insert desired zip code without the quotation'
+desiredZip = 'insert desired zip code as an integer'
 targetURL = 'make your search on realtor.com with your needs and put the search url here'
 
 source = requests.get(targetURL).text
