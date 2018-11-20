@@ -1,6 +1,6 @@
 #Goals:
-#Scrape realtor sites for data on houses matching needs
-#Use that data determine the cost and how long those houses are on the market
+#Scrape realtor site for data on houses matching my needs
+#Use that data determine the cost of homes and potentially how long those houses are on the market
 #Format data in an easily readable format from CSV (Probably using Google Sheets)
 #?
 #Profit!
@@ -9,7 +9,8 @@ from bs4 import BeautifulSoup
 import requests, urlopen
 import csv
 
-desiredZip = 'insert desired zip code as an integer'
+desiredZip = 'insert desired zip code for home as an integer'
+#URL for www.realtor.com search
 targetURL = 'make your search on realtor.com with your needs and put the search url here'
 
 source = requests.get(targetURL).text
